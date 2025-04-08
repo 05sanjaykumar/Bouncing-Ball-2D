@@ -7,7 +7,7 @@ fn spawn_ball(mut commands: Commands) {
 
 fn spawn_camera(mut commands: Commands) {
     commands
-      .spawn(Camera2d);
+      .spawn((Camera2d,Transform::from_xyz(0., 10., 0.)));
 }
   
 fn main() {
